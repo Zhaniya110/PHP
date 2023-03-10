@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis');
 
+
 :root {
   /* generic */
   --gutterSm: 0.4rem;
@@ -41,8 +42,11 @@
 *::before,
 *::after {
   box-sizing: border-box;
+ 
 }
-
+p{
+  color: white;
+}
 html {
   font-size: 10px;
 }
@@ -54,8 +58,8 @@ body {
   overflow: hidden;
   width: 100vw;
   height: 100vh;
-  color: #455A64;
-  background-color: #7E57C2;
+
+  background-color: #e9ffea;
   font-family: var(--fontFamily);
   font-size: var(--fontSizeMd);
   line-height: var(--lineHeightMd);
@@ -97,7 +101,7 @@ body {
 }
 
 .Input-text::placeholder {
-  color: #B0BEC5;
+  color: #000000;
 }
 
 .Input-text:focus {
@@ -110,7 +114,7 @@ body {
   position: absolute;
   bottom: 50%;
   left: 1rem;
-  color: #fff;
+  color: #000000;
   font-family: inherit;
   font-size: var(--inputFontSize);
   font-weight: inherit;
@@ -169,3 +173,7 @@ body {
     box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
     transform: scale(1.05) rotate(-1deg);
   }
+  .comments p {
+    color: red;
+  }
+  
