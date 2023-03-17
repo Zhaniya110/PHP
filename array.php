@@ -1,35 +1,26 @@
-<?php
-$paper['copier'] = "Copier & Multipurpose";
-$paper['inkjet'] ="Inkjet Printer";
-$paper['laser'] = "Laser Printer";
-$paper['photo'] = "Photographic Pinter";
-echo $paper['laser'] . "   <br>" . $paper['photo'];
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-$my_array = array("apple", "banana", "orange");
+    <link rel="stylesheet" href="styke.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="site.php" method="post">
+Web Design: <input type="checkbox" name="interest[]" value="Web Design"><br>
+Mobile Development: <input type="checkbox" name="interest[]" value="Mobile Development"><br>
+Data Science : <input type="checkbox" name="interest[]" value="Data Science"><br>
 
-var_dump($my_array);
-echo "<br>";
+<input type="submit">
 
-echo "<br>";
+    <?php
+     $interest = $_POST["interest"];
+     print_r($interest);
 
-print_r($my_array);
-
-
-
-$paper[] = "Copier";
-$paper[] = "Inkjet";
- $paper[] = "Laser";
-$paper[] = "Photo";
-
-
-for($i = 0; $i <4;++$i){
-     echo "$i: $paper[$i] <br>";
- }
-
-/*0: Copier
-1: Inkjet
-2: Laser
-3: Photo*/
-
-?>
-
+    ?>
+    </form>
+</body>
+</html>
